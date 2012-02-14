@@ -1,4 +1,4 @@
-*README
+README
 
 This is Github Pages Source of Selte Network, Inc
 
