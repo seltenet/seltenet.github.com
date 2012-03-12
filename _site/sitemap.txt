@@ -1,10 +1,11 @@
 
-http://username.github.com/archive.html
-http://username.github.com/atom.xml
-http://username.github.com/categories.html
-http://username.github.com/index.html
-http://username.github.com/pages.html
-http://username.github.com/sitemap.txt
-http://username.github.com/tags.html
+http://seltenet.github.com/about.html
+http://seltenet.github.com/archive.html
+http://seltenet.github.com/atom.xml
+http://seltenet.github.com/categories.html
+http://seltenet.github.com/index.html
+http://seltenet.github.com/pages.html
+http://seltenet.github.com/sitemap.txt
+http://seltenet.github.com/tags.html
 
-http://username.github.com/lessons/2011/12/29/jekyll-introduction
+http://seltenet.github.com/lessons/2011/12/29/jekyll-introduction
