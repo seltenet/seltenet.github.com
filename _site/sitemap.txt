@@ -8,4 +8,5 @@ http://seltenet.github.com/pages.html
 http://seltenet.github.com/sitemap.txt
 http://seltenet.github.com/tags.html
 
-http://seltenet.github.com/lessons/2011/12/29/jekyll-introduction
+http://seltenet.github.com/2012/03/13/hello-world
+http://seltenet.github.com/2012/03/13/about-the-company
