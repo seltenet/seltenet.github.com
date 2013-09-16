@@ -1,143 +1,196 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Seltenet</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0; maximum-scale=1.0; minimum-scale=1.0; user-scalable=0;">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
-    <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="author" content="">
+    <link rel="shortcut icon" href="/static/img/favicon.png">
 
-    <!-- Le styles -->
-    <link href="/static/css/bootstrap.css" rel="stylesheet">
-    <style type="text/css">
-      body {
-        padding-top: 20px;
-        padding-bottom: 60px;
-      }
+    <title>Seltenet</title>
 
-      /* Custom container */
-      .container {
-        margin: 0 auto;
-        max-width: 1000px;
-      }
-      .container > hr {
-        margin: 60px 0;
-      }
-
-      /* Main marketing message and sign up button */
-      .jumbotron {
-        margin: 80px 0;
-        text-align: center;
-      }
-      .jumbotron h1 {
-        font-size: 100px;
-        line-height: 1;
-      }
-      .jumbotron .lead {
-        font-size: 24px;
-        line-height: 1.25;
-      }
-      .jumbotron .btn {
-        font-size: 21px;
-        padding: 14px 24px;
-      }
-
-      /* Supporting marketing content */
-      .marketing {
-        margin: 60px 0;
-      }
-      .marketing p + h4 {
-        margin-top: 28px;
-      }
-
-
-      /* Customize the navbar links to be fill the entire space of the .navbar */
-      .navbar .navbar-inner {
-        padding: 0;
-      }
-      .navbar .nav {
-        margin: 0;
-        display: table;
-        width: 100%;
-      }
-      .navbar .nav li {
-        display: table-cell;
-        width: 1%;
-        float: none;
-      }
-      .navbar .nav li a {
-        font-weight: bold;
-        text-align: center;
-        border-left: 1px solid rgba(255,255,255,.75);
-        border-right: 1px solid rgba(0,0,0,.1);
-      }
-      .navbar .nav li:first-child a {
-        border-left: 0;
-        border-radius: 3px 0 0 3px;
-      }
-      .navbar .nav li:last-child a {
-        border-right: 0;
-        border-radius: 0 3px 3px 0;
-      }
-    </style>
-    <link href="/static/css/bootstrap-responsive.css" rel="stylesheet">
-
-    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!-- Bootstrap core CSS -->
+    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
+<style type="text/css">
+.navbar-brand {padding: 10px 15px 0 10px;}
+.navbar{background-color:#fff;border-color:#080808} 
+</style>
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
-      <script src="/static/js/html5shiv.js"></script>
+      <script src="../../assets/js/html5shiv.js"></script>
+      <script src="../../assets/js/respond.min.js"></script>
     <![endif]-->
 
-    <!-- Fav and touch icons -->
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/static/ico/apple-touch-icon-144-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/static/ico/apple-touch-icon-114-precomposed.png">
-      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/static/ico/apple-touch-icon-72-precomposed.png">
-                    <link rel="apple-touch-icon-precomposed" href="/static/ico/apple-touch-icon-57-precomposed.png">
-                                   <link rel="shortcut icon" href="/static/ico/favicon.png">
+    <!-- Custom styles for this template -->
+    <link href="static/css/carousel.css" rel="stylesheet">
   </head>
-
   <body>
+    <div class="navbar-wrapper">
+      <div class="container">
 
-    <div class="container">
-
-      <div class="masthead">
-        <h3 class="muted">Seltenet</h3>
-        <div class="navbar">
-          <div class="navbar-inner">
-            <div class="container">
-              <ul class="nav">
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
+        <div class="navbar navbar navbar-static-top">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="index.html">
+                <img src="static/img/logo.png" >
+              </a>
+            </div>
+            <div class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="index.html">首页</a></li>
+                <li><a href="http://seltenet.diandian.com">新闻</a></li>
+                <li><a href="#">联系</a></li>
+                
               </ul>
             </div>
           </div>
-        </div><!-- /.navbar -->
+        </div>
+
+      </div>
+    </div>
+
+
+    <!-- Carousel
+    ================================================== -->
+    <div id="myCarousel" class="carousel slide">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="item active">
+          <img src="static/img/slide1.jpg">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>云解决方案</h1>
+              <p>提供完整的一套云解决方案，让您的应用在云上跑</p>
+              <p><a class="btn btn-large btn-primary" href="#">查看更多</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="static/img/slide2.png">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>技术支持</h1>
+              <p>让我们的技术人员帮你维护服务器、数据库</p>
+              <p><a class="btn btn-large btn-primary" href="#">查看更多</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="static/img/code.jpg">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>设计与开发</h1>
+              <p>从设计到开发完成，为您提供最优质的服务</p>
+              <p><a class="btn btn-large btn-primary" href="#">查看更多</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+    </div><!-- /.carousel -->
+
+
+
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div class="container marketing">
+
+      <!-- Three columns of text below the carousel -->
+      <div class="row">
+        <div class="col-lg-4">
+          <img class="img-circle" src="static/img/mobile.jpg" style="height:140px;width:140px">
+          <h2>移动开发</h2>
+          <p>为Android、iOS平台开发原生态App</p>
+          <p><a class="btn btn-default" href="#">查看更多 &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img class="img-circle" src="static/img/webdesign.jpg" style="height:140px;width:140px">
+          <h2>网页设计</h2>
+          <p>为客户量身定做的设计，保证客户满意</p>
+          <p><a class="btn btn-default" href="#">查看更多 &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img class="img-circle" src="static/img/software.jpg" style="height:140px;width:140px">
+          <h2>软件开发</h2>
+          <p>为石油企业和政府提供设开发和运维等服务</p>
+          <p><a class="btn btn-default" href="#">查看更多 &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+      </div><!-- /.row -->
+
+
+      <!-- START THE FEATURETTES 
+新闻中心,年轻向上的力量。是全方位的新闻资讯平台,24小时为您滚动报道国内、国际及社会新闻,为您提供最新、最快、最全的时事热点。
+    -->
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">响应式设计<span class="text-muted"> 移动为先</span></h2>
+          <p class="lead">利用最先进的设计技术，不光为了看起来好看，而且在现代的桌面浏览器上有极佳的表现。在平板电脑和智能手机上面还有 响应式CSS 可以使用。</p>
+        </div>
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive" src="static/img/home-responsive-500x500.png" alt="Generic placeholder image">
+        </div>
       </div>
 
-      <!-- Jumbotron -->
-      <div class="jumbotron">
-        <h1>Salam</h1>
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive" src="static/img/Cloud-Computing-500x500.jpg">
+        </div>
+        <div class="col-md-7">
+          <h2 class="featurette-heading">云服务器 ECS <span class="text-muted">解除后顾之忧</span></h2>
+          <p class="lead">云服务器（Elastic Compute Service, 简称ECS）是一种处理能力可弹性伸缩的计算服务，其管理方式比物理服务器更简单高效。云服务器帮助您快速构建更稳定、安全的应用，降低开发运维的难度和整体IT成本，使您能够更专注于核心业务创新。</p>
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">病毒式传播 <span class="text-muted">社交媒体</span></h2>
+          <p class="lead">你知道怎么管理社交媒体吗？怎么样才能充分利用这些账号得到最大的利益呢？随着社交媒体越来越受企业的重视，大家纷纷占据一席之地。这样就可以了？你的品牌就能得到传播了？</p>
+        </div>
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive" src="static/img/social-media.jpg">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <!-- /END THE FEATURETTES -->
+
+
+      <!-- FOOTER -->
+      <footer>
         
-        <a class="btn btn-large btn-success" href="#">Contact with us.</a>
-      </div>
+        <p>&copy; 2013 赛尔特网络有限公司 &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+      </footer>
 
-      <hr>
+    </div><!-- /.container -->
 
-      <!-- Example row of columns -->
-      
-      <div class="footer">
-        <p>&copy; Seltenet 2013</p>
-      </div>
 
-    </div> <!-- /container -->
-
-    <!-- Le javascript
+    <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script src="/static/js/bootstrap.min.js"></script>
-    
-
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+    <script src="static/js/holder.js"></script>
   </body>
 </html>
